@@ -1,22 +1,22 @@
 #!/usr/bin/perl -w
 
-#####################################################
-# 	PPLOG (Perl Powered Blog)		    			#
+#########################################################
+# 	PPLOG (Perl Powered Blog)		   	#
 #	The idea of this blog, is a very simple yet 	#
-#	powerful blog. Enjoy.			    			#
-#						    						#
-#	Coded by Federico Ramírez (fedekun)				#
-#	fedekiller@gmail.com							#
-#													#
-#	PPLOG uses the GNU Public Licence v3			#
+#	powerful blog. Enjoy.			    	#
+#						    	#
+#	Coded by Federico Ramírez (fedekun)		#
+#	fedekiller@gmail.com				#
+#							#
+#	PPLOG uses the GNU Public Licence v3		#
 #	http://www.opensource.org/licenses/gpl-3.0.html	#
-#													#
-#	Powered by YAGNI (You Ain't Gonna Need It)		#
-#	YAGNI: Only add things, when you actually 		#
-#	need them, not because you think you will.		#
-#	Hacked at By DrOwl								#
-#	Version: 23.1									#
-#####################################################
+#							#
+#	Powered by YAGNI (You Ain't Gonna Need It)	#
+#	YAGNI: Only add things, when you actually 	#
+#	need them, not because you think you will.	#
+#	Hacked at By DrOwl				#
+#	Version: 23.1					#
+#########################################################
 
 
 use CGI::Carp qw/fatalsToBrowser/;
@@ -169,7 +169,7 @@ sub getFiles
 	{#print " count:$i file: @entriesFiles[$NoOfFiles-$i], ";
 		my $tempContent = '';
 		
-		open(FILE, "<".$opDir."/". @entriesFiles[$i] );
+		open(FILE, "<".$opDir."/". $entriesFiles[$i] );
 		while(<FILE>)
 		{
 			$tempContent.=$_;
@@ -284,6 +284,7 @@ print header(), '<!DOCTYPE HTML PUBLIC -//W3C//DTD HTML 4.01 Transitional//EN ht
 <title>'.$config_blogTitle.' - Powered by PPLOG (hacked by DrOwl version)</title>
 <script src='.$config_currentJsFolder .$config_currentJsFile .' type="text/javascript"></script>
 <link href='.$config_currentStyleFolder .$config_currentStyleFile.' rel=stylesheet type="text/css">
+'.$config_customHTML_head.'
 </head>';
 }
 
@@ -1707,7 +1708,7 @@ else
 				if($do == 1)
 				{
 				doHTMLentrieOutput(@finalEntries,"comments");
-				doHTMLentrieOutput(@finalEntries);
+#				doHTMLentrieOutput(@finalEntries);
 				}
 			}
 			$i++;

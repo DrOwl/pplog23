@@ -1,0 +1,163 @@
+<!--
+ *	  { margin:0; padding:0 } 
+    h1 {border-bottom:dotted 1px #000000;margin-bottom:0px;}
+    h2 {margin-bottom:1px;font-size: 16pt;}
+    h3 {padding-top:30px;padding-bottom:0px;margin-bottom:0px;}
+
+    body {
+      font-size:1em;
+      padding:0px;
+      background:#ffffff;
+      color:#000000;
+    }
+
+/*    a:link {color: #000000; text-decoration:underline;font-size:105%;}
+    a:hover {color: #7722CC; text-decoration:line-through; }
+    a:visited {color: #774477; text-decoration:none;}
+    a:visited:hover {color: #7722CC; text-decoration:line-through; }
+*/
+    .divhidden {display:none;}
+    .divshown {display:inline;}
+
+    .tinytxt {font-size: 6pt;}
+    .smtxt {font-size: 8pt;}
+    .welcometxt {font-size: 18pt;
+     font-family: "Lucida Handwriting", arial, sans-serif ;}
+	 
+	 #mint {
+	   width: 40em;}
+	   
+	#ddate {
+	   }
+
+
+/* Main Layout */
+
+    #menu {
+ /*     width: 100%; */
+      padding: .23em
+    }
+
+
+    #left {
+      top: 1px;
+/*      width: 80%; */
+      float: left;
+    }
+
+    #right {
+      width: 260px;
+      top: 1px;
+      float: right;
+      padding: .23em
+    }
+    
+    #mainright {
+      top: 1px;
+      float: left;
+    }
+    
+    #mainleft {
+      top: 1px;
+      float: left;
+    }
+
+
+
+
+    #footer {
+      width: 100%;
+      float: left;
+      margin-top: 3em;
+    }
+
+
+
+/* pplog section */
+
+    #pplogBody {
+      top: 1px;
+/*      width: 80%; */
+      float: left;
+    }
+    .pplog {
+      color:#000000;
+      font-size: 12pt;
+      width: 40em;
+      margin-left: 0.23em;
+      border: 1px #000000 solid;
+      border-top-right-radius: 1em;
+      border-bottom-right-radius: 1em;
+      -moz-border-radius-topright: 1em; 
+      -moz-border-radius-bottomright: 1em;
+    }
+
+    .pploghead {
+      width: 100%;
+      background-color: #000000;
+      color: #ffffff;
+      border-top-right-radius: 1em;
+      -moz-border-radius-topright: 1em; 
+    }
+
+    .pplogheadmid {
+      font-size: 16pt;
+      max-width: 80%;
+      display: inline;
+      vertical-align:text-bottom;
+      background-color: transparent;
+      color: #ffffff
+    }
+
+    .pploghead a:link {color: #ffffff; text-decoration:underline;}
+    .pploghead a:hover {color: #66bb66; text-decoration:none; }
+    .pploghead a:visited {color: #aaaaaa; text-decoration:none;}
+    .pploghead a:visited:hover {color: #66bb66; text-decoration:none; }
+
+    .pplogcontent {
+      padding-top:0.23em;
+      padding-bottom:0.23em;
+    }
+
+    .pplogfoot {
+      color: #772277;
+      font-size: 90%;
+      width: 100%;
+    }
+
+    .pplogfoot A:link {color: #772277; text-decoration:none;}
+    .pplogfoot A:hover {color: #7722CC; text-decoration:line-through; }
+    .pplogfoot A:visited {color: #774477; text-decoration:line-through;}
+
+    .pplogcomment {
+      width: 100%;
+      display:none;
+    }
+
+    .pplogMenu {
+	float:right;
+	padding:0.23em;
+	margin-right:0.23em;
+	top:1px;
+	width:260px;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+	-moz-border-radius-bottomleft:1em;
+	-moz-border-radius-topleft:1em;
+	background-color:#000000;
+	border:1px solid #FFFFFF;
+	}
+    
+    .pplogMenu a:link {color: #ffffff; text-decoration:underline;}
+    .pplogMenu a:hover {color: #66bb66; text-decoration:none; }
+
+    .pplogMenuBox {
+	clear:right;
+	color:#FFFFFF;
+/*	float:left; */
+	padding:5px;
+    }
+
+
+/* other section */
+
